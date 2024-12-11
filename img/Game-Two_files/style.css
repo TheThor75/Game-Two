@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body {
+    background-color: black;
+    color: white;
+
+}
+
+/* CONTENU */
+
+.contenu {
+    position: fixed;
+    padding: 0 0 0 20px;
+
+}
+
+
+.contenu h1 {
+    background-color: red;
+}
+
+.contenu .text {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contenu div {
+
+    width: 40%;
+    position: fixed;
+    top: 160px;
+}
+
+.contenu .para {
+    font-weight: 700;
+    font-style: italic;
+
+}
