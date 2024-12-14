@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    width: 100%;
+    list-style: none;
+}
+
+
+body {
+    background-color: #f0f0f0;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+/*-------- CONTENU------------ */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(128, 123, 123, 0.514);
+    height: 80px;
+    color: rgb(253, 250, 250);
+
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-underline-position: below;
+    text-underline-offset: 3px;
+    padding: 0 20px;
+
+}
+
+.two {
+    color: rgb(223, 17, 195);
+}
+
+a {
+    color: rgb(223, 17, 195);
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    text-decoration: none;
+}
+
+ul li a::after {
+    content: "";
+    position: absolute;
+    left: .5px;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: rgb(223, 17, 195);
+    border-radius: 10px;
+    transform: scaleX(0);
+    transition: all .5s ease;
+
+}
+
+ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+
+.navbar {
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+
+}
+
+.nav-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links ul li {
+    margin: 0 10px;
+}
+
+/*----------CONTENAIR ------------*/
+.contenair {
+    position: relative;
+    text-align: center;
+    font-family: "Courier New";
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.contenair-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.contenair-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 800px;
+    color: white;
+}
+
+.contenair-div h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.contenair-div p {
+    margin: 20px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/*---------BUTTON POUR COMMENCER------*/
+
+.bton {
+    display: inline;
+    background-color: rgba(58, 58, 58, 0.377);
+    box-shadow: 0 3px 8px rgb(248, 247, 247);
+    color: rgb(223, 17, 195);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+
+}
+
+.bton:hover {
+    background-color: rgba(223, 17, 196, 0.774);
+    color: rgba(255, 255, 255, 0.726);
+}
+
+/*--------------COMPANY---------------*/
+.company {
+    background-color: #f7f8fc;
+    padding-top: 10px;
+
+}
+
+.comp-title {
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Andale Mono";
+
+}
+
+.company-logo {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    padding: 0 10vw;
+
+}
+
+.logo-itmes {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+/*-------ARTICLE---------*/
+.post {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 0 1rem;
+    background-color: #f0f0f0;
+}
+
+.article-contenair {
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    box-shadow: 0 1px 4px rgb(184, 181, 181);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+
+
+}
+
+
+
+.article-contenair:hover {
+    transform: scale(1.1);
+}
+
+.article-content {
+    padding: 0 15px;
+}
+
+.article-content h3 {
+    font-size: 1rem;
+    color: rgb(223, 17, 195);
+    font-weight: 700;
+}
+
+.article-content p {
+    line-height: 1.3;
+}
+
+/*-----------TEMOIGNAGES-----------*/
+.temoiss {
+
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 30px;
+
+}
+
+.temoiss h3 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.temoiss p {
+    color: #a09f9fe3;
+    font-size: 1rem;
+}
+
+.temoin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 0 1rem;
+    background-color: #f0f0f0;
+
+}
+
+.temoin-contenair {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cfcece;
+    box-shadow: 4px 5px 8px rgb(184, 181, 181);
+    padding: 20px;
+}
+
+.temoin-contenair img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+
+
+}
+
+.temoin-content {
+
+    text-align: center;
+    line-height: 1.3;
+    font-weight: 600;
+
+}
+
+.temoin-name {
+    font-size: 1rem;
+    color: rgb(223, 17, 195);
+    font-weight: 700;
+    padding-top: 12px;
+}
+
+
+
+
+/*--------------A PROPOS --------------*/
+.propos {
+    background-color: #f0f0f0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 20px 3rem;
+}
+
+.propos1 {
+    text-align: center;
+
+}
+
+.propos1 h3 {
+    margin-bottom: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.propos1 p {
+    margin: 0;
+    color: rgba(0, 0, 0, 0.322);
+}
+
+
+
+/*------------------CONTACT---------------*/
+.contact {
+    background-color: #f0f0f0;
+
+    line-height: 1.5;
+
+}
+
+.contact-contenair {
+    text-align: center;
+}
+
+.contact-contenair h4 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 190px;
+    background-color: rgba(133, 133, 132, 0.226);
+    padding: 25px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: #f7f3f3fa;
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+input:hover {
+    box-shadow: 0 0 8px black;
+}
+
+
+.contact-form {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* From Uiverse.io by cssbuttons-io */
+button {
+    padding: 1.3em 3em;
+    margin: 1rem 0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    background-color: rgb(223, 17, 195);
+    box-shadow: 0px 15px 20px rgba(44, 44, 44, 0.644);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+
+
+/*----------------FOOTER-------------------*/
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #cfcece;
+    padding: 20px;
+    gap: 40px;
+
+
+}
+
+.footer-contenair {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.footer-info h4 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    padding: 20px;
+    gap: 30px;
+}
+
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: rgb(223, 17, 195);
+    position: absolute;
+    right: -90vw;
+    top: -12px;
+
+}
+
+/*-----------RESPONSIVE-------------*/
+
+@media (max-width: 980px) {
+    .navbar {
+        position: absolute;
+    }
+
+    .nav-links {
+        padding: 35px;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
+        background-color: rgba(175, 171, 171, 0.575);
+        z-index: 1000;
+        height: 100vh;
+        backdrop-filter: blur(5px);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links ul {
+        display: block;
+        text-align: center;
+
+
+    }
+
+    .nav-links ul li {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
+/*-------------------TEL 780PX--------------*/
+
+@media screen and (max-width: 780px) {
+    .company {
+        text-align: center;
+    }
+
+
+    .article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .fornit {
+        grid-column: 1 / 3;
+    }
+
+    .article-contenair {
+        transition: none;
+
+    }
+
+    .article-contenair:hover {
+        transform: none;
+    }
+
+    .temoin {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+
+    .propos {
+        text-align: center;
+    }
+
+
+    .footer {
+        display: flex;
+        padding: 0 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+}
