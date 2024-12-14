@@ -15,7 +15,7 @@ body {
 
 }
 
-/*-------- CONTENU------------ */
+/*-- CONTENU-- */
 .header {
     display: flex;
     justify-content: space-between;
@@ -88,7 +88,7 @@ ul li a:hover::after {
     margin: 0 10px;
 }
 
-/*----------CONTENAIR ------------*/
+/*--CONTENAIR --*/
 .contenair {
     position: relative;
     text-align: center;
@@ -126,7 +126,7 @@ ul li a:hover::after {
     line-height: 1.5;
 }
 
-/*---------BUTTON POUR COMMENCER------*/
+/*--BUTTON POUR COMMENCER--*/
 
 .bton {
     display: inline;
@@ -146,7 +146,7 @@ ul li a:hover::after {
     color: rgba(255, 255, 255, 0.726);
 }
 
-/*--------------COMPANY---------------*/
+/*--COMPANY--*/
 .company {
     background-color: #f7f8fc;
     padding-top: 10px;
@@ -179,7 +179,7 @@ ul li a:hover::after {
 
 }
 
-/*-------ARTICLE---------*/
+/*--ARTICLE--*/
 .post {
     text-align: center;
     font-size: 2rem;
@@ -225,7 +225,7 @@ ul li a:hover::after {
     line-height: 1.3;
 }
 
-/*-----------TEMOIGNAGES-----------*/
+/*--TEMOIGNAGES--*/
 .temoiss {
 
     background-color: #f0f0f0;
@@ -290,7 +290,7 @@ ul li a:hover::after {
 
 
 
-/*--------------A PROPOS --------------*/
+/*--A PROPOS --*/
 .propos {
     background-color: #f0f0f0;
     font-size: 1.2rem;
@@ -317,7 +317,7 @@ ul li a:hover::after {
 
 
 
-/*------------------CONTACT---------------*/
+/*--CONTACT--*/
 .contact {
     background-color: #f0f0f0;
 
@@ -393,7 +393,7 @@ button:active {
 
 
 
-/*----------------FOOTER-------------------*/
+/*--FOOTER--*/
 .footer {
     display: flex;
     align-items: center;
@@ -434,9 +434,13 @@ button:active {
 
 }
 
-/*-----------RESPONSIVE-------------*/
+/*--RESPONSIVE--*/
 
 @media (max-width: 980px) {
+    body {
+        width: 100%;
+    }
+
     .navbar {
         position: absolute;
     }
@@ -477,9 +481,13 @@ button:active {
 }
 
 
-/*-------------------TEL 780PX--------------*/
+/*--TEL 780PX--*/
 
 @media screen and (max-width: 780px) {
+    body {
+        width: 100%;
+    }
+
     .company {
         text-align: center;
     }
@@ -521,14 +529,30 @@ button:active {
         padding: 0 30px;
     }
 
-
-
-
-
-
-
-
-
-
-
 }
+
+/*-480-*/
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+
+    .company {
+        text-align: center;
+    }
+
+
+    .article {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .fornit {
+        grid-column: 1 / 3;
+    }
+
+    .article-contenair {
+        transition: none;
+
+    }
