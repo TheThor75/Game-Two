@@ -17,11 +17,9 @@ document.body.addEventListener("click", function () {
 });
 
 window.onload = function () {
-  setTimeout(function () {
-    for (let i = 0; i < rappeltitre.length; i++) {
-      setTimeout(function () {
-        titre.textContent = rappeltitre.substring(0, i);
-      }, i * 100);
-    }
-  }, 200);
+  for (let i = 0; i < rappeltitre.length; i++) {
+    setTimeout(function () {
+      titre.textContent = rappeltitre.substring(0, i);
+    }, i * 100);
+  }
 };
