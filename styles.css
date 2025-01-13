@@ -471,7 +471,6 @@ button:active {
     width: 100vw;
     backdrop-filter: blur(15px);
   }
-
   .navbar.active {
     display: flex;
   }
