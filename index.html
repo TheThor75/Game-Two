@@ -9,13 +9,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="icon" href="/img/favicon.png" type="image/x-icon">
 </head>
-
 <body>
     <!--CONTENU-->
 
     <header class="header">
         <h1 class="logo">Game-<span class="two">Two</span></h1>
-        <nav class="navbar ">
+        <div class="hamburger" id="hamburger">
+            <i class="bar"></i>
+            <i class="bar"></i>
+            <i class="bar"></i>
+        </div>
+        <nav class="navbar " id="navbar">
             <div class="nav-links ">
                 <ul>
                     <li><a href="#acc">Accueil</a></li>
@@ -31,16 +35,13 @@
                     <i class="fa-brands fa-twitter"></i>
                 </div>
             </div>
-            <div class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </div>
         </nav>
 
     </header>
     <section class="contenair"><img src="img/gettyimages-1187064129-2048x2048.jpg" alt="jeux vidéo arrier-plan"
             class="contenair-img" id="acc">
         <div class="contenair-div">
-            <h2>Plongez dans l'univers du jeu vidéo </h2>
+            <h2 id="titre1">Plongez dans l'univers du jeu vidéo </h2>
             <p>Game-Two, votre spécialiste des jeux vidéo, vous invite à découvrir des aventures immersives et des
                 expériences ludiques inoubliables. Que vous soyez un joueur passionné ou un débutant curieux, notre
                 expertise transforme chaque partie en une nouvelle exploration.
@@ -218,9 +219,9 @@
         </div>
         <div class="footer-info">
             <h4>INFOS ENTREPRISE</h4>
+            
             <p>Conditions d’utilisation
-                Politique De Protection De La Vie Privée
-                Cookies
+                Politique De Protection De La Vie Privée <br>
                 Acceptation des cookies</p>
         </div>
         <div class="social">
@@ -230,13 +231,8 @@
             <i class="fa-brands fa-x-twitter"></i>
         </div>
     </div>
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.querySelector('.nav-links');
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            hamburger.innerHTML = navLinks.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-        });
+    <script src="index.js">
+      
     </script>
 </body>
 
