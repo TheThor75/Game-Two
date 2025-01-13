@@ -430,14 +430,15 @@ button:active {
 }
 
 .social-icons i:hover {
-  color: rgb(223, 17, 195);
+  color: rgba(192, 189, 189, 0.993);
 }
-.social {
+.socialess {
   color: rgb(31, 3, 109);
-  font-size: 20px;
+  font-size: 25px;
+  cursor: pointer;
 }
-.social i:hover {
-  color: rgb(223, 17, 195);
+.socialess i:hover {
+  color: rgba(192, 189, 189, 0.993);
 }
 /*--RESPONSIVE--*/
 
@@ -474,7 +475,10 @@ button:active {
   .navbar.active {
     display: flex;
   }
-
+  .nav-links {
+    position: relative;
+    top: 50px;
+  }
   .nav-links ul {
     display: block;
     text-align: center;
@@ -497,7 +501,7 @@ button:active {
 
 /*--TEL 780PX--*/
 
-@media (max-width: 780px) {
+@media (max-width: 764px) {
   body {
     width: 100%;
   }
@@ -532,6 +536,9 @@ button:active {
     display: flex;
     padding: 0 30px;
   }
+  .socialess {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 550px) {
@@ -540,9 +547,9 @@ button:active {
     gap: 20px;
   }
 
-  .social {
+  .socialess {
     display: flex;
-    gap: 10px;
-    margin: 5px;
+    gap: 15px;
+    margin: 10px;
   }
 }
