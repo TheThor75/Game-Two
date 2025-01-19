@@ -18,7 +18,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(128, 123, 123);
+  background-color: rgba(128, 123, 123, 0.596);
+  backdrop-filter: blur(15px);
   height: 80px;
   color: rgb(253, 250, 250);
   position: fixed;
@@ -71,7 +72,7 @@ ul li a:hover::after {
   transform: scaleX(1);
 }
 ul li a:hover {
-  color: rgb(31, 3, 109);
+  color: rgb(49, 40, 88);
 }
 
 .navbar {
@@ -440,7 +441,6 @@ button:active {
   color: rgba(192, 189, 189, 0.993);
 }
 .socialess {
-  display: flex;
   color: rgb(31, 3, 109);
   font-size: 25px;
   cursor: pointer;
@@ -473,7 +473,7 @@ button:active {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: rgb(107, 104, 104);
+    background-color: rgba(128, 123, 123, 0.966);
     z-index: 7;
     height: 100vh;
     width: 100vw;
