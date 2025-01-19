@@ -23,7 +23,8 @@ window.onload = function () {
     lastScrollY = window.scrollY;
   });
 
-  document.body.addEventListener("click", function () {
+  document.body.addEventListener("click", function (e) {
+    e.stopPropagation();
     humberger.classList.remove("active");
     navbar.classList.remove("active");
   });
