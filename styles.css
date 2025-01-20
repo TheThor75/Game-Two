@@ -71,7 +71,7 @@ ul li a:hover::after {
   transform: scaleX(1);
 }
 ul li a:hover {
-  color: rgb(49, 40, 88);
+  color: rgb(255, 255, 255);
 }
 
 .navbar {
@@ -438,6 +438,8 @@ button:active {
   color: rgba(192, 189, 189, 0.993);
 }
 .socialess {
+  display: flex;
+  justify-content: space-between;
   color: rgb(31, 3, 109);
   font-size: 25px;
   cursor: pointer;
@@ -569,41 +571,25 @@ button:active {
     object-fit: cover;
   }
 
-  .article-contenair {
-    transition: none;
-  }
-
-  .article-contenair:hover {
-    transform: none;
-  }
-
   .temoin {
     display: flex;
     flex-wrap: wrap;
-  }
-
-  .propos {
-    text-align: center;
   }
 
   .footer {
     display: flex;
     padding: 0 30px;
   }
-  .socialess {
-    flex-direction: column;
-  }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 580px) {
   .contact-content {
     display: flex;
     gap: 20px;
   }
 
   .socialess {
-    display: flex;
+    flex-direction: column;
     gap: 15px;
-    margin: 10px;
   }
 }
