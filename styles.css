@@ -19,7 +19,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(128, 123, 123, 0.76);
+  background-color: #6A645A;
   backdrop-filter: blur(45px);
   height: 80px;
   color: rgb(253, 250, 250);
