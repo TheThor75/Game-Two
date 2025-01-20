@@ -19,8 +19,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #6A645A;
-  backdrop-filter: blur(45px);
+  background-color: #363B48;
   height: 80px;
   color: rgb(253, 250, 250);
   position: fixed;
@@ -487,8 +486,7 @@ button:active {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: #6A645A;
-    backdrop-filter: blur(45px);
+    background-color: #363B48;
     z-index: 7;
     height: 100vh;
     width: 100vw;
