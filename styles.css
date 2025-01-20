@@ -456,16 +456,35 @@ button:active {
     grid-column: 1 / -1;
   }
   .article-contenair.fornite img {
-    height: 300px;
     object-fit: cover;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 990px) {
   body {
     width: 100%;
   }
+  .article {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .article-contenair.fornite {
+    grid-column: 2 / -1;
+  }
+  .article-contenair.fornite img {
+    object-fit: cover;
+  }
+  .footer {
+    display: flex;
+    padding: 0 30px;
+  }
+}
 
+/*--TEL 780PX--*/
+
+@media (max-width: 764px) {
+  body {
+    width: 100%;
+  }
   .separator {
     display: block;
   }
@@ -484,7 +503,12 @@ button:active {
     position: absolute;
     top: 0;
     right: 0;
+<<<<<<< HEAD
     background-color: #363B48;
+=======
+    background-color: #494e5a;
+    backdrop-filter: blur(45px);
+>>>>>>> 92a34fc (mise a jour du responsive)
     z-index: 7;
     height: 100vh;
     width: 100vw;
@@ -510,26 +534,39 @@ button:active {
     display: flex;
   }
 
-  .footer {
-    display: flex;
-    padding: 0 30px;
-  }
-}
-
-/*--TEL 780PX--*/
-
-@media (max-width: 764px) {
-  body {
-    width: 100%;
-  }
-
   .company {
     text-align: center;
   }
 
   .article {
-    display: grid;
-    grid-template-columns: repeat(1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .article-contenair.fornite {
+    grid-column: 1 / 1;
+  }
+  .article-contenair.fornite img {
+    height: 300px;
+    object-fit: cover;
+  }
+  .article-contenair.warzone {
+    grid-column: 1 / 1;
+  }
+  .article-contenair.warzone img {
+    height: 300px;
+    object-fit: cover;
+  }
+  .article-contenair.pubg {
+    grid-column: 1 / 1;
+  }
+  .article-contenair.pubg img {
+    height: 300px;
+    object-fit: cover;
+  }
+  .article-contenair.godofwar {
+    grid-column: 1 / 1;
+  }
+  .article-contenair.godofwar img {
+    object-fit: cover;
   }
 
   .article-contenair {
