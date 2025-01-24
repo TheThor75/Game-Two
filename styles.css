@@ -507,10 +507,6 @@ button:active {
     right: 0;
 <<<<<<< HEAD
     background-color: #363B48;
-=======
-    background-color: #494e5a;
-    backdrop-filter: blur(45px);
->>>>>>> 92a34fc (mise a jour du responsive)
     z-index: 7;
     height: 100vh;
     width: 100vw;
