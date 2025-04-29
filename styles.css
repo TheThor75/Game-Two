@@ -6,6 +6,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
+
+  scroll-behavior: smooth;
 }
 
 body {
@@ -64,7 +66,7 @@ body {
 }
 
 a {
-  color: rgb(31, 3, 109);
+  color: rgb(247, 246, 248);
   font-size: 19px;
   font-weight: 500;
   text-transform: uppercase;
@@ -82,7 +84,7 @@ ul li a::after {
   background: rgb(223, 17, 195);
   border-radius: 10px;
   transform: scaleX(0);
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 ul li a:hover::after {
@@ -111,8 +113,8 @@ ul li a:hover {
   position: relative;
   text-align: center;
   font-family: "Courier New";
-  height: 100vh;
-  overflow: hidden;
+  height: 600px;
+  width: 100%;
 }
 
 .contenair-img {
@@ -203,29 +205,62 @@ ul li a:hover {
   transition: transform 0.3 ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .article-contenair {
-  background-color: whitesmoke;
   overflow: hidden;
   border-radius: 8px;
+  background-color: #363b48;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   transition: transform 1.3 ease, box-shadow 0.5s ease;
+  width: 380px;
+  height: 420px;
+  position: relative;
+  overflow: hidden;
 }
-.article-contenair img {
+.article-contenair:hover {
+  box-shadow: 0px 0px 15px rgb(17, 17, 17);
+}
+.image {
   width: 100%;
-  object-fit: cover;
+  height: 270px;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  transition: height 1s;
 }
-.article-contenair h3 {
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transition: opacity 1s, transform 1s;
+  padding: 0px;
+  margin: 0px;
+}
+.content {
+  height: 0px;
+  padding: var(--margin);
+  opacity: 0;
+  transition: opacity 1s, height 1s;
+}
+.article-contenair:hover .image {
+  height: 120px;
+}
+.article-contenair:hover .image img {
+  transform: scale(1.1);
+  opacity: 0.6;
+}
+.article-contenair:hover .content {
+  opacity: 1;
+  height: 80px;
+}
+.title-h3 {
   font-size: 1.2rem;
   color: rgb(223, 17, 195);
   margin: 1rem;
 }
+
 .article-contenair p {
   font-size: 0.9rem;
   padding: 0 1rem 1rem;
-  color: #131212;
-}
-.article-contenair:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.527);
+  color: #fff;
 }
 
 /*--TEMOIGNAGES--*/
@@ -466,11 +501,11 @@ button:active {
 }
 .effet [class*="effet-"] {
   opacity: 0;
-  transform: translateY(-34px);
+  transform: translateY(-24px);
 }
 
 .effet-visible [class*="effet-"] {
-  transition: 1s cubic-bezier(0.74, 0.19, 0.4, 1.06);
+  transition: 0.8s cubic-bezier(0.74, 0.19, 0.4, 1.06);
   transform: translateY(0);
   opacity: 1;
 }
@@ -490,12 +525,17 @@ button:active {
 /*--RESPONSIVE--*/
 
 @media (max-width: 1310px) {
+  .article {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
   .article-contenair {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: auto;
+    width: 100%;
+    max-width: 100%;
   }
   .article-contenair.fornite {
-    grid-column: 1 / -1;
+    grid-column: 2 / -1;
   }
   .article-contenair.fornite img {
     object-fit: cover;
@@ -538,9 +578,10 @@ button:active {
     margin: 30px;
     padding: 1rem;
   }
-
+  .contenair-div {
+    width: 100%;
+  }
   .navbar {
-    padding: 35px;
     display: none;
     position: fixed;
     top: 0;
@@ -621,6 +662,9 @@ button:active {
 }
 
 @media (max-width: 580px) {
+  .contenair-div {
+    width: 100%;
+  }
   .contact-content {
     display: flex;
     gap: 20px;
